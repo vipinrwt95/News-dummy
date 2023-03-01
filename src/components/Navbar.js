@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function HeaderNavigation() {
   return (
-    <Navbar bg="warning" expand="lg">
+    <Navbar bg="warning" title="news" expand="lg">
       <Container>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,7 +18,7 @@ function HeaderNavigation() {
             <Nav.Link href="#Geo politics">Geo Politics</Nav.Link>
             <Nav.Link href="#Sports">Sports</Nav.Link>
             <NavDropdown title="Local News" href="local" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Delhi</NavDropdown.Item>
+              <NavDropdown.Item bg="warning" href="#action/3.1">Delhi</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Mumbai
               </NavDropdown.Item>
