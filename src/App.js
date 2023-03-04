@@ -1,17 +1,18 @@
 import React from 'react';
-import Navigation from './components/Navbar'
-import Brand from './components/BrandHeader'
-import News from './components/News';
-import Current from './components/Current';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+import NewsDetails from './components/NewsDetails';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <div>
-     <Brand /> 
-     <Navigation />
-     <News />
-     <Current />
+      <Routes>
+     <Route path="/" element={<Home/>} />
+      <Route path="NewsDetails" element={<NewsDetails/>} />
+     </Routes>
+     
     </div>
   );
 }
