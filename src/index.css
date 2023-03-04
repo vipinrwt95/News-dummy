@@ -3,9 +3,18 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+h1{
+  font:bold;
+}
 body {
   margin: 0;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+.currency{
+  display:flex;
 }

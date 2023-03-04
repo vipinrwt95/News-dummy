@@ -1,11 +1,15 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ImageHoverZoom from './ImageHoverZoom';
+
 
 const CardDetails=(props)=> {
-  return (
-    <Card style={{ width: '18rem', margin:'10px'}}>
-      <Card.Img variant="top" src={props.image} />
+    console.log(props.image)
+    return (
+    
+    <Card style={{ width: '25rem', margin:'10px'}}>
+      <ImageHoverZoom image={props.image} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>
